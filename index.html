@@ -94,7 +94,46 @@
   box-shadow:0 10px 30px rgba(0,0,0,0.25);
   overflow:hidden;
   position:relative;
-  background:#fff;
+  background:#7efa03;
+  
+}
+
+/* Wish sections backdrop */
+.wish:nth-child(1) {
+  background: linear-gradient(135deg, #ffe259, #ffa751); /* golden */
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+/* General style for all wish sections */
+.wish-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Wish section backgrounds */
+.wish-1 {
+  background: linear-gradient(135deg, #0ceaf9, #df05cd); /* pink to blue */
+}
+
+.wish-2 {
+  background: linear-gradient(135deg, #cef107, #08f404); /* soft pink tones */
+}
+
+.wish-3 {
+  background: linear-gradient(135deg, #a1c4fd, #8b07e9); /* blue gradient */
+}
+
+.wish-4 {
+  background: linear-gradient(135deg, #f6fa0a, #120be1); /* gold to white */
+}
+
+/* Inner wish box */
+.wish {
+  background: rgb(7, 252, 19);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* stack slides on top of each other */
@@ -125,6 +164,7 @@
   object-fit:cover;        /* crop to fill without distortion */
   display:block;
   border-radius:8px;
+  background-color: #08fa08;
 }
 
 /* optional: controls (if you add them later) */
@@ -135,6 +175,21 @@
 }
 .slideshow .control.prev{left:10px}
 .slideshow .control.next{right:10px}
+
+/* Whole slideshow section background */
+.slideshow-section {
+  background: linear-gradient(135deg, #f9e907, #37e906); /* elegant peach gradient */
+  padding: 60px 20px;
+}
+
+/* Optional: add slight glow around slideshow */
+.slideshow-wrap {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
 
     /* Fix responsiveness for wishes */
 /* Fix responsiveness for wishes */
@@ -266,6 +321,7 @@
   </header>
 
   <!-- Slideshow -->
+   <section class="slideshow-section">
   <div class="slideshow-wrap">
     <div class="slideshow">
       <div class="slide active"><img src="slide1.jpg" alt="Celebration image 1"></div>
@@ -273,27 +329,28 @@
       <div class="slide"><img src="slide3.jpg" alt="Celebration image 3"></div>
     </div>
   </div>
+  </section>
 
   <!-- Wishes -->
-  <section class="wish first">
+  <section class="wish 1">
     <div><h2>Wish 1</h2>
       <figure class="image-frame"><img src="wish1.jpg" alt="Mrs. Abosede"></figure>
       <p>May your birthday be filled with peace and joy. Your kindness and Godly wisdom have touched many lives positively. You are indeed a blessing!</p></div>
   </section>
 
-  <section class="wish odd">
+  <section class="wish 2">
     <div><h2>Wish 2</h2>
       <figure class="image-frame"><img src="wish2.jpg" alt="Celebration"></figure>
       <p>We thank God for your life. May His light shine upon you and your family continually. Your faithfulness inspires us daily.</p></div>
   </section>
 
-  <section class="wish even">
+  <section class="wish 3">
     <div><h2>Wish 3</h2>
       <figure class="image-frame"><img src="wish3.jpg" alt="Family celebration"></figure>
       <p>Your love, counsel, and example have transformed lives. May you enjoy abundant blessings, health, and prosperity in Jesus' name.</p></div>
   </section>
 
-  <section class="wish odd">
+  <section class="wish 4">
     <div><h2>Wish 4</h2>
       <figure class="image-frame"><img src="wish4.jpg" alt="Birthday moment"></figure>
       <p>We rejoice with you today! May the Lord increase you on every side and grant you joy unspeakable all your days.</p></div>
